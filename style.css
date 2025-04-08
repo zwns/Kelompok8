@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+  
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+  
+main {
+    padding: 1em;
+}
+  
+/* Form Styles */
+form {
+    margin: 1em 0;
+}
+  
+form input {
+    margin: 0.5em;
+    padding: 0.5em;
+}
+  
+form button {
+    padding: 0.5em 1em;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Book Container Styles */
+#book-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row (1x2) */
+    gap: 1em;
+    padding: 1em;
+}
+
+/* Styling for each book column */
+.book-column {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Title of each book column */
+.book-column h2 {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5em;
+}
+  
+/* Styling for books in a list */
+.book-column ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row (1x2) */
+    gap: 20px;
+}
+
+/* Each individual book item */
+.book-column li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em 0;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.book-column li:hover {
+    transform: scale(1.05);
+}
+
+/* Book cover image styles */
+.book-column img {
+    width: 100px; /* Atur lebar gambar tetap */
+    height: 150px; /* Atur tinggi gambar tetap */
+    object-fit: cover; /* Menjaga proporsi gambar agar tidak terdistorsi */
+    margin-right: 1em;
+    border-radius: 4px;
+}
+
+/* Button styles for borrow and return */
+.book-column button {
+    margin-top: 1em;
+    padding: 0.3em 0.6em;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book-column button.borrow {
+    background: #4caf50;
+}
+
+.book-column button:hover {
+    opacity: 0.9;
+}
+
+/* Button styles for delete */
+.book-column button.delete {
+    margin-left: 10px;
+    padding: 0.3em 0.6em;
+    background: #f44336; /* Red color for delete */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book-column button.delete:hover {
+    opacity: 0.8;
+}
+
+/* Styles for action buttons */
+.book-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.book-actions button {
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book-actions button.borrow {
+    background: #4caf50;
+    color: white;
+}
+
+.book-actions button.delete {
+    background: #f44336;
+    color: white;
+}
+
+.book-actions button:hover {
+    opacity: 0.8;
+}
